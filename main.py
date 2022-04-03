@@ -74,7 +74,7 @@ def get_best_queries(s: str, number_of_queries: int) -> List[str]:
 
 def main():
     while True:
-        s = correction(input())
+        s = correction(input().lower())
         suggest = get_best_queries(s, 5)
         print("\n".join(suggest))
     pass
